@@ -1,1 +1,71 @@
-<h1>Cart Page</h1>
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Quantity and Price Section -->
+<div class = 'container' style = "width: 70%">
+    <table class="table table-light table-hover">
+        <thead>
+          <tr>
+            <th scope="col"><button type="button" class="btn btn-primary btn-lg">Continue Shopping →</button></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <tr>
+            <th scope="row"><h4><strong>Items: 3</strong></h4></th>
+            <td></td>
+            <td><h3><strong>Total: ৳</strong></h3></td>
+            <!-- <td></td> -->
+            <td><button type="button" class="btn btn-primary btn-lg">Checkout →</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- Cart Section -->
+<div class = 'container' style = 'margin-top: 50px; width: 70%'>
+<table class="table table-light table-hover">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"><h3><strong>Item</strong></h3></th>
+        <th scope="col"><h3><strong>Price</strong></h3></th>
+        <th scope="col"><h3><strong>Quantity</strong></h3></th>
+        <th scope="col"><h3><strong>Total</strong></h3></th>
+      </tr>
+    </thead>
+    <tbody>
+
+      
+      <tr>
+        <th scope="row"><div id = "cart_image"><img src =""></div></th>
+        <td><h3></h3></td>
+        <td><h3></h3></td>
+        <td><input type = 'number' class = 'quantity' value = "" 
+        style = 'width: 50px; padding-left: 5px'></td>
+        <td><h3></h3></td>
+      </tr>
+
+      <tr>
+        <th scope="row"><div id = "cart_image"><img src =""></div></th>
+        <td><h3></h3></td>
+        <td><h3></h3></td>
+        <td><input type = 'number' class = 'quantity' value = "" 
+        style = 'width: 50px; padding-left: 5px'></td>
+        <td><h3></h3></td>
+      </tr>
+
+      <tr>
+        <th scope="row"><div id = "cart_image"><img src =""></div></th>
+        <td colspan="2">Larry the Bird</td>
+        <td><h3></h3></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
