@@ -12,3 +12,6 @@ def cart(request):
 
 def checkout(request):
     return render(request, 'checkout.html', {})
+
+def base(request):
+    return render(request, 'base.html', {})
